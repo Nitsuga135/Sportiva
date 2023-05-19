@@ -1,0 +1,12 @@
+Agregar links en navbar
+modificar los links de test a index
+tanto de css como de scripts
+consultar ideas de diseño para el navbar
+y consultar ideas de diseño para las fotos
+
+
+
+/////////////////////
+pendientes prioritarios 
+hacer diseño de menu 
+antes de empezar ver la tipografia que voy a usar(Probar el mismo estilo q el titulo de sportiva)

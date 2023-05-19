@@ -1,0 +1,191 @@
+:root{
+    --celeste:rgb(5, 13, 97);
+    --navbar:#00A9CF;
+    --nabar-hover:rgb(36, 137, 174);
+    --background:#fcfcfc;
+    --containers:#f4f8fb;
+    --whats-app:#30d50b;
+    --conteriners-servicios:#d5eaef;
+    /*--celeste:#00A9CF;
+    --containers:#ebeff2;
+    --navbar:rgb(5, 13, 97);
+    --nabar-hover:rgb(36, 137, 174);
+    --background:rgb(209, 245, 253);
+    
+    FUENTES
+
+    P:Raleway
+    h2:
+    LOGO:Lora
+    */
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*GLOBALS*/
+html,body{
+    background-color: var(--background);
+    font-size: 18px;
+}
+
+
+p{
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    
+}
+h1{
+    color: var(--celeste);
+    font-family: 'Lora', sans-serif;
+}
+h2{
+    
+    font-family: 'Lora', sans-serif;
+    color: var(--celeste);
+}
+
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style:none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 5;
+}
+
+/*menu hamburguesa*/
+.burger{
+    display: none;
+    width: 100%;
+    min-height: 400px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    transition: all 6000ms;
+    
+}
+.item-lista-menu{
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    width: 85%;
+    background-color: var(--celeste);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 15px 5px  5px 5px ;
+    color: var(--navbar);
+}
+.icono-menu{
+    position: absolute;
+    right: 15px;
+    top: -10px;
+    
+}
+.fa-bars{
+    cursor: pointer;
+    color: var(--navbar);
+}
+.show-menu {
+    display: flex;
+  }
+
+
+
+
+/*menu*/
+
+/*contenedores*/
+
+
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 60px;
+    background-color: var(--celeste);
+    margin:10px auto;
+    border-radius: 10px;
+    box-shadow: 10px 5px 15px black;
+}
+
+.ul-nav-links{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    display: none;
+   
+}
+.navbar{
+    width: 60%;
+    position:relative;
+
+}
+
+
+
+/*Texto de navbar*/
+.logo{
+    margin-left: 20px;
+
+}
+.link-navbar{
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    color: var(--navbar);
+    
+}
+.link-navbar:hover{
+    color: var(--nabar-hover);
+    
+}
+@media ( min-width:1000px){
+    .ul-nav-links{
+        display: flex;
+        justify-content: space-around;
+    }
+    .burger{
+        display: none;
+    }
+    .icono-menu{
+        display: none;
+    }
+    .link-navbar:hover{
+        border-bottom: 1px solid var(--nabar-hover);
+        
+    }
+}
+.menu-animation{
+    animation: menu-animation 0.2s linear;
+    display: flex;
+}
+/*Animation*/
+@keyframes menu-animation{
+
+    0%{
+        display: none;
+        min-height: 0;
+        height: 0;
+    }
+    50%{
+        display: flex;
+        height: 200px;
+    }
+    100%{
+        display: flex;
+        height: 400px  ;
+    }
+
+}

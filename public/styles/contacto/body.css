@@ -1,0 +1,73 @@
+/*Globales*/
+h1{
+    padding-top: 80px;
+    text-align: center;
+}
+a{
+    color: white;
+}
+
+
+/*Containers*/
+main{
+    min-height: calc(100vh - 80px);
+
+}
+.container-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-lista{
+    min-height:100px ;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/*TEXTO*/
+.container-lista li{
+    margin: 10px;
+}
+.container-lista h2{
+    padding-top: 20px;
+}
+.turnos{
+    background-color: var(--whats-app);
+    padding: 10px;
+    border-radius: 10px;
+    width: 60%;
+}
+/*MAPA*/
+.mapa{
+    width: 30vw;
+    height: 30vw;
+}
+
+
+
+/*iconos*/
+
+.icono{
+    color: #000;
+    font-size: 24px;
+    color: var(--celeste);
+}
+@media (min-width:768px) {
+    .container-lista{
+        width: 40%;
+    }
+    .container-all{
+        flex-direction: row;
+    }
+    .mapa{
+        margin-top: 100px;
+        border-radius: 10px;
+    }
+    
+}

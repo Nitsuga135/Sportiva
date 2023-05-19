@@ -1,0 +1,77 @@
+
+.titular{
+    padding-top: 80px;
+    text-align: center;
+}
+.container-all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.container-kinesiologo{
+    display: flex;
+    border:1px solid var(--celeste);
+    width: 80%;
+    min-height: 1150px;
+    gap: 20px;   
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--containers);
+    margin-bottom: 20px;
+}
+.contenedor-texto{
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/*Texto cambios*/
+.container-kinesiologo h2{
+    padding-top: 15px;
+}
+.wpp{
+    margin-top: 15px;
+}
+.kinesiologo{
+    margin: 10px;
+}
+
+.titulos-kinesiologo{
+    margin-bottom: 15px;
+    min-height: 250px;
+}
+.titulos-kinesiologo li{
+    padding-top: 15px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.4;
+}
+.subtitulo{
+    margin-bottom: 20px;
+}
+
+.contenedor-texto i{
+    color:var(--whats-app);
+    font-size: 40px;
+}
+@media (min-width:768px) {
+    
+    .container-kinesiologo{
+        
+        width: 40%;
+        
+    }
+    .container-all{
+        justify-content: space-around;
+        align-content: center;
+        flex-direction: row;
+    }
+    img{
+        height: 450px;
+        width: 250px;
+    }
+}

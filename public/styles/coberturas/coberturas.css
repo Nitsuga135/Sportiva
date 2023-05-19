@@ -1,0 +1,26 @@
+img{
+    
+    width: 80%;
+    height: 75vh;
+    margin: 0 auto;
+}
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+h1{
+    padding-top: 80px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    color: var(--celeste);
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+@media (min-width:768px) {
+    img{
+        width: 40%;
+    }
+}
